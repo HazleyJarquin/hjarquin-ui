@@ -1,3 +1,4 @@
+import { Button as ShadcnButton } from "@/components/ui/button";
 import React from "react";
 
 interface ButtonProps {
@@ -6,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
+  return <ShadcnButton onClick={onClick}>{label}</ShadcnButton>;
 };
 
 export default Button;
